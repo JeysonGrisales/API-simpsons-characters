@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.6) url(./img/fondo2.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+    gap: 30rem;
+}
+
+
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 5rem;
+    color:transparent;
+    background: linear-gradient(#1497be, #1c2aec);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text 5s linear infinite;
+    font-size: 3rem;
+    
+}
+
+@keyframes text{
+    0%{
+        filter:hue-rotate(0deg)
+    }
+    100%{
+        filter:hue-rotate(360deg)
+    }
+}
+
+#titletwo{
+    font-size: 7rem;
+    color:#fff;
+    text-shadow: 6px 6px 6px  #ff0000;
+    background: linear-gradient(#1497be, #1c2aec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text 5s linear infinite;
+}
+
+#card{
+    width: 30rem;
+    height: 40rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.825);
+    box-shadow: 0 0 15px blue;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#card >img{
+    width: 100%;
+    height: 91%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 4.5rem;
+}
+
+#description{
+    width: 30rem;
+    height: 10rem;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+button{
+    margin-top: 1.5rem;
+    border-style: none;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 15px blue;
+}
+
+button:hover{
+    background-color: #00befd;
+    color:white
+}
